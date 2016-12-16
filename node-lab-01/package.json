@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/iproduct/course-nodejs/issues"
   },
-  "homepage": "https://github.com/iproduct/course-nodejs#readme"
+  "homepage": "https://github.com/iproduct/course-nodejs#readme",
+  "dependencies": {
+    "irc": "^0.5.2"
+  }
 }

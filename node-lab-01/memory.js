@@ -1,13 +1,12 @@
 'use strict';
 
 var EventEmitter = require('events').EventEmitter;
-var util = require('util');
 
 class MemoryWatcher extends EventEmitter {
   constructor(options) {
     super();
     options = options || {
-      frequency: 2000 // 10 seconds
+      frequency: 10000 // 10 seconds
     };
     setInterval(() => {
       var bytes = process.memoryUsage().rss; // resident set size

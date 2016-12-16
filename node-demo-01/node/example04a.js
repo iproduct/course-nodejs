@@ -1,3 +1,5 @@
+'use strict';
+
 var EventEmitter = require('events');
 
 class MyEventEmitter extends EventEmitter {
@@ -11,6 +13,7 @@ class MyEventEmitter extends EventEmitter {
 let mee = new MyEventEmitter();
 
 function doFirstJob() {
+  
   console.log("Firs job done!");
 }
 

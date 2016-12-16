@@ -1,0 +1,43 @@
+CONNECTED(000002BC)
+---
+Certificate chain
+ 0 s:/C=BG/ST=Some-State/L=Sofia/O=CourseNode/OU=Node/CN=127.0.0.1/emailAddress=mail@google.com
+   i:/C=BG/ST=Some-State/L=Sofia/O=CourseNode/OU=Node/CN=127.0.0.1/emailAddress=mail@google.com
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICCDCCAbICCQCvWPBbYAoQ6TANBgkqhkiG9w0BAQUFADCBijELMAkGA1UEBhMC
+QkcxEzARBgNVBAgMClNvbWUtU3RhdGUxDjAMBgNVBAcMBVNvZmlhMRMwEQYDVQQK
+DApDb3Vyc2VOb2RlMQ0wCwYDVQQLDAROb2RlMRIwEAYDVQQDDAkxMjcuMC4wLjEx
+HjAcBgkqhkiG9w0BCQEWD21haWxAZ29vZ2xlLmNvbTAeFw0xNjEyMTUxNzI3MTJa
+Fw0xNzAzMjQxNzI3MTJaMIGKMQswCQYDVQQGEwJCRzETMBEGA1UECAwKU29tZS1T
+dGF0ZTEOMAwGA1UEBwwFU29maWExEzARBgNVBAoMCkNvdXJzZU5vZGUxDTALBgNV
+BAsMBE5vZGUxEjAQBgNVBAMMCTEyNy4wLjAuMTEeMBwGCSqGSIb3DQEJARYPbWFp
+bEBnb29nbGUuY29tMFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMWuF0zdW2PH9dWw
+Hm7pAUxu0vcJwHugwVk/xBMMIuri18gfccewCGJKnJ5q3ed6V6HIyfwFJxMBMyGW
+0bJ0Ri0CAwEAATANBgkqhkiG9w0BAQUFAANBAIrFvc+glgIofCjOQkeywbUjRQPZ
+XMcHgGgSQVzuiLhL6jHJH1FoW0Vnrh0ljrZk7clxvwSekez51+Ae0j/xG/Q=
+-----END CERTIFICATE-----
+subject=/C=BG/ST=Some-State/L=Sofia/O=CourseNode/OU=Node/CN=127.0.0.1/emailAddress=mail@google.com
+issuer=/C=BG/ST=Some-State/L=Sofia/O=CourseNode/OU=Node/CN=127.0.0.1/emailAddress=mail@google.com
+---
+No client certificate CA names sent
+---
+SSL handshake has read 693 bytes and written 261 bytes
+---
+New, TLSv1/SSLv3, Cipher is AES256-SHA
+Server public key is 512 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : TLSv1
+    Cipher    : AES256-SHA
+    Session-ID: 6224F7EBFA26C9710557C71069F0A1D35097541F918BE86C79FF1C6A045A6826
+    Session-ID-ctx: 
+    Master-Key: D9B25A955B7F5969A53CC10AD3330AAA1ED7C1AF37881597DFD951A58404F71B644D650813B5ED7FAD3E3B8EB78E440A
+    Key-Arg   : None
+    Start Time: 1481823909
+    Timeout   : 300 (sec)
+    Verify return code: 18 (self signed certificate)
+---

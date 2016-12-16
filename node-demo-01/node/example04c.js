@@ -1,3 +1,5 @@
+'use strict';
+
 var EventEmitter = require('events');  
 var util = require('util');
 
@@ -16,5 +18,5 @@ function doFirstJob() {
 }
 
 mee.on('myEvent', function onMyEvent() {  
- console.log("MyEvent received.");
+ console.log("MyEvent received.", this);
 });
