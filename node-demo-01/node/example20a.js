@@ -24,6 +24,6 @@ http.get('http://localhost:8000/page2.html', (response) => {
         console.log(`HTTP error: ${response.statusCode}: ${response.statusMessage}` );
     }
 }).on('error', (e) => {
-    console.log(`Got error: ${e.response}`);
+    console.log(`Got error: ${e.message}`);
 });
 

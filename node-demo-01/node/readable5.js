@@ -1,3 +1,5 @@
+'use strict';
+
 const countries = require('./countries');
 const JsonToString = require('./transform1');
 const AddNewLine = require('./transform2');
@@ -7,7 +9,8 @@ const Readable = require('stream').Readable;
 // console.log(countries);
 
 class CountriesReadable extends Readable {
-    constructor(options = {objectMode: true}) {
+    constructor(options) {
+        options = options || {objectMode: true};
         super(options);
         this.index = 0;
     }
@@ -25,10 +28,10 @@ class CountriesReadable extends Readable {
 let rs = new CountriesReadable();
 
 rs
-.pipe(new MyWritable());
-// .pipe(new JsonToString())
+// .pipe(new MyWritable());
+.pipe(new JsonToString())
 // .pipe(new AddNewLine())
-// .pipe(process.stdout);
+.pipe(process.stdout);
 
 rs.on('error', process.exit);
 

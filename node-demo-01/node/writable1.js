@@ -1,9 +1,12 @@
+'use strict';
+
 const Writable = require('stream').Writable;
 const fs = require('fs');
 const split = require('split');
 
 class MyWritable extends Writable {
-    constructor(options = {objectMode: true}) {
+    constructor(options) {
+        options = options || {objectMode: true};
         super(options);
     }
     _write(chunk, enc, next) {
@@ -12,7 +15,7 @@ class MyWritable extends Writable {
     }
 }
 
-let readStream = fs.createReadStream('countries.txt'); 
+let readStream = fs.createReadStream('./node/countries.txt'); 
 readStream
   .pipe(split(JSON.parse))
   .pipe(new MyWritable());

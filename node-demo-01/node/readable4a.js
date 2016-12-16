@@ -1,3 +1,5 @@
+'use strict';
+
 const Readable = require('stream').Readable;
 
 //lets test it
@@ -18,5 +20,5 @@ rs.pipe(process.stdout);
 rs.on('error', process.exit);
 
 process.on('exit', function () {
-    console.error('\n_read() called ' + (rs.char - 97) + ' times');
+    console.error('\n_read() called ');
 });

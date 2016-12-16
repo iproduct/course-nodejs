@@ -1,3 +1,5 @@
+'use strict';
+
 const Readable = require('stream').Readable;
 
 //lets test it

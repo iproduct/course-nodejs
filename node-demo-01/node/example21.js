@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * TCP demo - exposing REPL shell using TCP socket
  */

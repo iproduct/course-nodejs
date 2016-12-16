@@ -1,3 +1,5 @@
+'use strict';
+
 const Transform = require('stream').Transform;
 
 class AddNewLine extends Transform {

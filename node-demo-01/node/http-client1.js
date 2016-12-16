@@ -7,7 +7,7 @@ var postData = querystring.stringify({
 
 var options = {
   hostname: 'localhost',
-  port: 8000,
+  port: 3000,
   path: '/',
   method: 'POST',
   headers: {

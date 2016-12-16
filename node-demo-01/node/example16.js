@@ -2,7 +2,7 @@ var fs = require("fs");
 var data = '';
 
 // Create a readable stream
-var readerStream = fs.createReadStream('page1.html');
+var readerStream = fs.createReadStream('node/page1.html');
 
 readerStream.setEncoding('UTF8');
 
